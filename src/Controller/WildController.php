@@ -5,6 +5,7 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+
 class WildController extends AbstractController
 {
     /**
@@ -32,12 +33,6 @@ class WildController extends AbstractController
             $newSlug = ucwords($newSlug);
         }
         return $this->render('wild/index.html.twig', ['slug'=>$newSlug]);
+
     }
 }
-
-
-
-
-
-
-
